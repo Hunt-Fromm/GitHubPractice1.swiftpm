@@ -11,8 +11,12 @@ struct ContentView: View {
         TextField("Number 1", value: $number1, formatter: NumberFormatter())
             .frame(width: 20, height: 20, alignment: .center)
         TextField("number2", value: $number2, formatter: NumberFormatter())
-            .frame(width: 100, height: 20)
-            .textFieldStyle(.roundedBorder)
+            .frame(width: 50, height: 20)
+            .padding(3)
+            .background(
+                RoundedRectangle(cornerRadius: 2)
+                    .stroke(lineWidth: 1.0)
+            )
         
         
         Spacer()
@@ -38,6 +42,10 @@ struct ContentView: View {
             answer = number1*number2
         }
         
-        Text("\(answer)")
+        Spacer()
+            .frame(height: 50)
+        
+        Text("Answer: \(answer)")
+            .fontWeight(.bold)
     }
 }
