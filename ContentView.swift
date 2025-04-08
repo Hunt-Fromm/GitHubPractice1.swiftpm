@@ -14,11 +14,14 @@ struct ContentView: View {
             .frame(width: 100, height: 20)
             .textFieldStyle(.roundedBorder)
         
-        Text("\(answer)")
-            
+        
+        Spacer()
+            .frame(height: 50)
         
         Button("Add") {
             answer = number1 + number2
         }
+        
+        Text("\(answer)")
     }
 }
