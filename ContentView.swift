@@ -43,6 +43,10 @@ struct ContentView: View {
             answer = number1*number2
         }
         
-        Text("\(answer)")
+        Spacer()
+            .frame(height: 50)
+        
+        Text("Answer: \(answer)")
+            .fontWeight(.bold)
     }
 }
