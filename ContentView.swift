@@ -3,11 +3,10 @@ import SwiftUI
 struct ContentView: View {
     
     @State var number3: Int
+    @State var number2 = 2
+
     
     var body: some View {
-        
-        @State var number2 = 2
-        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
