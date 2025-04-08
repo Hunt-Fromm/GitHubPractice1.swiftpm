@@ -7,11 +7,7 @@ struct ContentView: View {
 
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+        TextField("Number 2", value: $number2, formatter: NumberFormatter())
+            .frame(width: 20, height: 20, alignment: .center)
     }
 }
