@@ -22,6 +22,10 @@ struct ContentView: View {
             answer = number1 + number2
         }
         
+        Button("Multiply") {
+            answer = number1*number2
+        }
+        
         Text("\(answer)")
     }
 }
