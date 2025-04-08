@@ -7,7 +7,7 @@ struct ContentView: View {
 
     
     var body: some View {
-        TextField("Number 1", value: $number3, formatter: NumberFormatter())
+        TextField("Number 1", value: $number1, formatter: NumberFormatter())
             .frame(width: 20, height: 20, alignment: .center)
         TextField("number2", value: $number2, formatter: NumberFormatter())
             .frame(width: 100, height: 20)
