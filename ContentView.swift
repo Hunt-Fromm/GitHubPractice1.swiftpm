@@ -22,6 +22,18 @@ struct ContentView: View {
             answer = number1 + number2
         }
         
+        // Subtraction Button
+        Button() {
+            answer = number1 - number2
+        } label: {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 100, height: 30)
+                .overlay(
+                    Text("Subtract")
+                        .foregroundStyle(.white)
+                )
+        }
+        
         Text("\(answer)")
     }
 }
