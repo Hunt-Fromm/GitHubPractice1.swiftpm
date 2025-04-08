@@ -23,8 +23,16 @@ struct ContentView: View {
         Spacer()
             .frame(height: 50)
         
-        Button("Add") {
+        Button() {
             answer = number1 + number2
+        } label: {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 100, height: 30)
+                .foregroundStyle(Color(UIColor(red: 0, green: 0.8, blue: 0.3, alpha: 1)))
+                .overlay(
+                    Text("Add")
+                        .foregroundStyle(.white)
+                )
         }
         
         // Subtraction Button
@@ -39,8 +47,16 @@ struct ContentView: View {
                 )
         }
         
-        Button("Multiply") {
+        Button() {
             answer = number1*number2
+        } label: {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 100, height: 30)
+                .foregroundStyle(.blue)
+                .overlay(
+                    Text("Multiply")
+                        .foregroundStyle(.white)
+                )
         }
         
         Spacer()
