@@ -5,6 +5,9 @@ struct ContentView: View {
     @State var number3: Int = 0
     
     var body: some View {
+        
+        @State var number2 = 2
+        
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
