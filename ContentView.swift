@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var number3: Int
+    @State var number3: Int = 0
     
     var body: some View {
         VStack {
