@@ -9,10 +9,15 @@ struct ContentView: View {
     
     var body: some View {
         TextField("Number 1", value: $number1, formatter: NumberFormatter())
-            .frame(width: 20, height: 20, alignment: .center)
-        TextField("number2", value: $number2, formatter: NumberFormatter())
-            .frame(width: 100, height: 20)
+            .frame(width: 100, height: 30, alignment: .center)
             .textFieldStyle(.roundedBorder)
+            .foregroundColor(Color(.systemPink))
+        
+        TextField("number2", value: $number2, formatter: NumberFormatter())
+            .frame(width: 100, height: 30)
+            .textFieldStyle(.roundedBorder)
+            .foregroundColor(Color(.systemPink))
+            
         
         
         Spacer()
